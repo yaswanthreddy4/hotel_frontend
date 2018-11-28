@@ -1,0 +1,9 @@
+.card-group {
+    margin-top: 40px;
+}
+
+.pagination {
+    margin-top: 20px;
+    position: relative;
+    float: right;
+}

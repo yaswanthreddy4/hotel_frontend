@@ -1,0 +1,40 @@
+<br/>
+<br/>
+<!-- <div class="card" style="width: 18rem;" *ngFor="let event of events">
+    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div> -->
+
+<!-- <div class="row" *ngFor="let event of events">
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="card-group row-sm-6 col-sm-6" *ngFor="let event of events ; let i=index">
+    <div class="card">
+        <img *ngIf=i [src]=images[i] alt="fasak">
+        <!-- <span *ngFor="let image of images">
+      </span> -->
+        <!-- <img class="card-img-top" *ngFor="let image of images" src="image" alt="Card image cap"> {{image}} -->
+        <div class="card-body">
+            <h5 class="card-title">Event Name:{{event.eventname}}</h5>
+            <p class="card-text">Description:{{event.description}}</p>
+            <p class="card-text">Url:{{event.url}}</p>
+            <p class="card-text">Event Manager:{{event.eventmanager}}</p>
+            <p class="card-text">Likes:{{event.likes}}</p>
+            <p class="card-text">Tags:{{event.tags}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>

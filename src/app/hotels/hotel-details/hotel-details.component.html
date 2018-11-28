@@ -1,0 +1,35 @@
+<br>
+<div>
+    <h1 class="name">{{hotel.name}}</h1>
+    <aside *ngIf="hotel.name">
+        <figure>
+            <img src="https://media-api.xogrp.com/images/9a506749-95e9-47cf-857e-5374f2205b93~rs_768.h" alt=" Card image cap">
+            <figcaption>Fig:{{hotel.name}}</figcaption>
+        </figure>
+    </aside>
+
+    <h3 class="all" *ngIf="hotel.description">Description:{{hotel.description}}</h3>
+    <h3 class="all" *ngIf="hotel.stars">Ratings: {{hotel.stars}}</h3>
+    <h3 class="all" *ngIf="hotel.services">Services: {{hotel.services}}</h3>
+    <h3 class="all" *ngIf="hotel.currency">Currency: {{hotel.currency}}</h3>
+
+
+    <!-- <h3 class="all">Rooms Type: {{hotel.rooms[0].type}}<br/> Room No: {{hotel.rooms[0].number}}<br/> Description: {{hotel.rooms[0].description}}<br /> Price: {{hotel.rooms[0].price}}<br /></h3> -->
+    <div *ngFor="let loopHotel of hotel.rooms">
+        <h3 class="all" *ngIf="loopHotel.type">Rooms Type: {{loopHotel.type}}</h3>
+        <h3 class="all" *ngIf="loopHotel.number">Room No: {{loopHotel.number}} </h3>
+        <h3 class="all" *ngIf="loopHotel.description"> Description: {{loopHotel.description}}</h3>
+        <h3 class="all" *ngIf="loopHotel.price">Price: {{loopHotel.price}}</h3>
+    </div>
+
+    <div>
+        <h3 class="all" *ngIf="hotel.location">Location Adress: {{hotel.location.address}}</h3>
+        <h3 class="all" *ngIf="hotel.location">coordinates: {{hotel.location.coordinates}}</h3>
+    </div>
+
+    <div *ngFor="let loopReview of hotel.reviews">
+        <h3 class="all">Name: {{loopReview.name}}</h3>
+        <h3 class="all">Review:{{loopReview.review}}</h3>
+        <h3 class="all">Rating: {{loopReview.rating}}</h3>
+    </div>
+</div>

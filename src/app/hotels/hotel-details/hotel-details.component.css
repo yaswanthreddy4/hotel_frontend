@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    font-family: monospace;
+    color: black;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: chocolate;
+    position: relative;
+    margin-left: 50px;
+}
+
+aside {
+    float: right;
+}
+
+figure {
+    position: relative;
+    margin-left: 50px;
+}
+
+h3 {
+    font-size: 50px;
+    position: relative;
+    margin-left: 50px;
+}
+
+figcaption {
+    font-size: 30px;
+    position: relative;
+    margin-left: 0px;
+}
+
+h3 {
+    font-size: 20px;
+}

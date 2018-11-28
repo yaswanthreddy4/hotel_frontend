@@ -1,0 +1,34 @@
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" (click)="getHotelsWithFilter(offset-count,count)">Previous</a></li>
+        <li class="page-item"><a class="page-link" (click)="getHotelsWithFilter(0,count)">1</a></li>
+        <li class="page-item"><a class="page-link" (click)="getHotelsWithFilter(6,count)">2</a></li>
+        <li class="page-item"><a class="page-link" (click)="getHotelsWithFilter(12,count)">3</a></li>
+        <li class="page-item"><a class="page-link" (click)="getHotelsWithFilter(offset+count,count)">Next</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-md-4 py-4" *ngFor="let hotel of hotels">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="https://media-api.xogrp.com/images/9a506749-95e9-47cf-857e-5374f2205b93~rs_768.h" alt=" Card image cap">
+                    <!-- <img class="card-img-top" src="{{hotel.photos[0]}}" alt=" Card image cap"> -->
+                    <div class="card-body">
+                        <a routerLink="/hotel/{{hotel._id}}">
+                            <h5>{{hotel.name}}</h5>
+                        </a>
+                        <h5 class="card-title">Rating: {{hotel.stars}}</h5>
+                        <p class="card-text">Services: {{hotel.services}}</p>
+                        <p class="card-text">Currency: {{hotel.currency}}</p>
+                        <!-- <p class="card-text">Address: {{hotel.location.address}}</p> -->
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
