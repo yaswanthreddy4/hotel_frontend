@@ -12,6 +12,8 @@ import { AdminGuard } from './guard/admin.guard';
 import { EventsComponent } from './home/events/events.component';
 
 
+
+
 const routes: Routes = [
   {path:'', component:HomeComponent},
   { path: 'home', component: HomeComponent },
@@ -20,6 +22,7 @@ const routes: Routes = [
   { path: 'hotel/:hotelId', component: HotelDetailsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
+  { path: 'events', component: EventsComponent },
   { path: 'admin', component: AdminComponent,canActivate:[AdminGuard] },
   { path: '**', component: NotFoundComponent }
 ];

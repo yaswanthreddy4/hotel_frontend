@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { EventsComponent } from './home/events/events.component';
+import { CustomifDirective } from './directives/customif.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { EventsComponent } from './home/events/events.component';
     HotelsComponent,
     EventsComponent,
     AdminComponent,
+    CustomifDirective,
     
   ],
   imports: [

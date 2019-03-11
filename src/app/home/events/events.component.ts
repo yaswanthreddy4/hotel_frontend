@@ -7,7 +7,6 @@ import { EventsService } from '../../services/events.service';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
-  @Input()
   events = [];
   images = ["../../../assets/image1.jpeg",
     "../../../assets/image2.jpeg",

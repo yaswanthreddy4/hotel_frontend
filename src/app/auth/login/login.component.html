@@ -1,5 +1,4 @@
 <form class="form-signin">
-    <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <p class="error" *ngIf="error">{{error}}</p>
     <label for="inputEmail" class="sr-only">Email address</label>
@@ -12,5 +11,16 @@
     </label>
     </div>
     <button class="btn btn-lg btn-primary btn-block" (click)="loginUser()" type="submit">Sign in</button>
+    <!-- <p class="text-center">Login with your social media account</p>
+    <div class="text-center social-btn">
+        <a class="btn btn-primary"><i class="fa fa-facebook" (click)="fbLogin()"></i>&nbsp; Facebook</a>
+        <a href="#" class="btn btn-info"><i class="fa fa-twitter"></i>&nbsp; Twitter</a>
+        <a href="#" class="btn btn-danger"><i class="fa fa-google"></i>&nbsp; Google</a>
+    </div> -->
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    sample1 <input type="text" #data>
+    <button (click)='senddata(data)' type="submit">click</button><br/>
+    <!-- sample2 <input type="text">
+    <button (input)='senddata2($event)' type="submit">click</button> -->
+
 </form>

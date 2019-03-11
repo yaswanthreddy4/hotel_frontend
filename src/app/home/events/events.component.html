@@ -28,13 +28,13 @@
       </span> -->
         <!-- <img class="card-img-top" *ngFor="let image of images" src="image" alt="Card image cap"> {{image}} -->
         <div class="card-body">
-            <h5 class="card-title">Event Name:{{event.eventname}}</h5>
-            <p class="card-text">Description:{{event.description}}</p>
+            <h5 class="card-title">Event Name:{{event.eventname | lowercase}}</h5>
+            <p class="card-text">Description:{{event.description | uppercase }}</p>
             <p class="card-text">Url:{{event.url}}</p>
             <p class="card-text">Event Manager:{{event.eventmanager}}</p>
             <p class="card-text">Likes:{{event.likes}}</p>
             <p class="card-text">Tags:{{event.tags}}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago </small></p>
         </div>
     </div>
 </div>
